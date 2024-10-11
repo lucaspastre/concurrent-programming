@@ -21,9 +21,8 @@
 
 int main (int argc, char** argv) {
     pid_t processo;
-    int i;
 
-    for (i = 0; i < 2; i++) {
+    for (int i = 0; i < 2; i++) {
         processo = fork();
 
         if (processo == 0) {
